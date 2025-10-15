@@ -1,0 +1,37 @@
+
+<P>HI THERE</P>
+<div class="container mt-5">
+  <div class="card shadow-lg p-4 rounded-3">
+    <h3 class="text-center mb-4 text-primary">Simple Calculator</h3>
+
+    <div class="mb-3">
+      <input type="number" [(ngModel)]="num1" placeholder="Enter first number" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+      <input type="number" [(ngModel)]="num2" placeholder="Enter second number" class="form-control" />
+    </div>
+
+    <div class="d-flex justify-content-around mb-3">
+      <button class="btn btn-success" (click)="calculate('+')">+</button>
+      <button class="btn btn-danger" (click)="calculate('-')">−</button>
+      <button class="btn btn-warning" (click)="calculate('*')">×</button>
+      <button class="btn btn-info" (click)="calculate('/')">÷</button>
+    </div>
+
+    <div class="alert alert-secondary text-center fw-bold" *ngIf="result !== null">
+      Result: {{ result }}
+    </div>
+  </div>
+
+
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint atque voluptatem minima at nam. Nemo velit soluta possimus, consequuntur rem dicta esse quod corrupti rerum voluptates a laborum minima error?</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates nulla perferendis ex natus distinctio quisquam molestias sequi aspernatur. Nemo laborum est illo culpa, aliquid repellat ipsa tempore eveniet maiores illum?</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint atque voluptatem minima at nam. Nemo velit soluta possimus, consequuntur rem dicta esse quod corrupti rerum voluptates a laborum minima error?</p>
+</div>
+
+
+
